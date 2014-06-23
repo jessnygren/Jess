@@ -1,0 +1,137 @@
+/* imports eraser web browser default settings*/
+@import url(reset.css);
+/* imports font from google fonts*/
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
+
+/*Mobile first approach*/
+body {
+    font: 14px/1.5 'Raleway', sans-serif;
+    color: #000000;
+    width: 100%;
+    margin: 0 auto;
+}
+h1,
+h2,
+h3,
+{
+    font-weight: 700;
+}
+header h1{
+
+}
+
+
+/* deletes home button from mobile view*/
+.noshow{
+    display:none;
+}
+/* mobile navigation*/
+nav ul{ /*positions the navigation on the right hand side*/
+    padding:10px;
+    position: absolute;
+    top: 20px;
+    left: 390px;
+}
+nav ul li a{
+    color: #000000;
+}
+
+section.first{
+    font-size: 60px;
+    background-image: url(../images/papertexture.png);
+    text-align:center;
+    padding: 100px 10px 100px 10px;
+
+
+}
+section.second{
+    font-size: 20px;
+    color:#ffffff;
+    background-color: #808080;
+    text-align:center;
+    padding: 50px;
+}
+section.third{
+     padding: 20px;
+
+}
+section.third h2{
+    font-size: 25px;
+    padding-left: 200px;
+}
+
+section.third p{
+    margin: 20px; /* makes the paragraph more readable*/
+}
+section.third img{
+    width: 35%;
+    padding-left: 155px;
+}
+section.represent p{
+    font-size: 75%;
+   position: relative;
+    bottom: 170px;
+    left: 240px;
+}
+section.represent p+p{
+    position: relative;
+    bottom:140px;
+    left: 260px;
+}
+section.represent p+p+p{
+    position:relative;
+    bottom: 150px;
+    left: 0;
+}
+section.represent h3{
+    position: relative;
+    bottom: 130px;
+    left: 90px;
+}
+
+section.fourth{
+
+}
+section.fifth{
+    width: 90%;
+}
+section.fifth input,
+section.fifth textarea{
+    padding: 10px;
+    border: 1px solid #E5E5E5;
+    width: 200px;
+    color: #999999;
+}
+section.fifth textarea{
+    width: 400px;
+    height: 150px;
+    max-width: 400px;
+    line-height: 18px;
+}
+section.fifth.form label {
+    margin-left: 10px;
+    color: #999999;
+}
+section.fifth.submit input{
+    width: 100px;
+    height: 40px;
+    background-color: #306d99;
+    color: #FFF;
+}
+
+footer nav ul{
+    clear: both;
+}
+
+footer li {
+    width: 50%;
+    float: left;
+
+}
+footer li a {
+    display: block;
+    padding: 6px 0;
+    color: #000000;
+    text-decoration: none;
+}
+
