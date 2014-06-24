@@ -27,24 +27,33 @@ header h1{
 }
 /* mobile navigation*/
 nav ul{ /*positions the navigation on the right hand side*/
-    padding:10px;
-    position: absolute;
-    top: 20px;
-    left: 390px;
+    padding: 10px;
+    position: absolute; /*absolute in mobile view*/
+    top: 30px;
+    right: 20px;
+    text-align: right;
 }
 nav ul li a{
     color: #000000;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border-bottom: 1px solid black;
+    text-decoration: none;
 }
 
 section.first{
     font-size: 60px;
-    background-image: url(../images/papertexture.png);
+   /* background-image: url(../images/papertexture.png); */
     text-align:center;
     padding: 100px 10px 100px 10px;
+    width: 100%;
 
 
 }
 section.second{
+    font-weight:400;
     font-size: 20px;
     color:#ffffff;
     background-color: #808080;
@@ -52,12 +61,12 @@ section.second{
     padding: 50px;
 }
 section.third{
-     padding: 20px;
+     padding: 20px 20px 0 20px;
 
 }
 section.third h2{
     font-size: 25px;
-    padding-left: 200px;
+    text-align:center;
 }
 
 section.third p{
@@ -90,16 +99,21 @@ section.represent h3{
 }
 
 section.fourth{
+    margin-left: 10px;
 
 }
+section.fourth h3{
+    text-align:center;
+    font-size: 28px;
+}
 section.fifth{
-    width: 90%;
+    margin-left: 20px;
 }
 section.fifth input,
 section.fifth textarea{
     padding: 10px;
     border: 1px solid #E5E5E5;
-    width: 200px;
+    width: 400px;
     color: #999999;
 }
 section.fifth textarea{
@@ -113,19 +127,20 @@ section.fifth.form label {
     color: #999999;
 }
 section.fifth.submit input{
-    width: 100px;
+    width: 400px;
     height: 40px;
     background-color: #306d99;
     color: #FFF;
 }
 
-footer nav ul{
-    clear: both;
-}
+
 
 footer li {
-    width: 50%;
+    width: 100%;
     float: left;
+    position: absolute;
+    bottom: 50px;
+    right: 30px;
 
 }
 footer li a {
@@ -134,4 +149,154 @@ footer li a {
     color: #000000;
     text-decoration: none;
 }
+footer p{
+    text-align: center;
+}
+@media (min-width: 700px){
+     #page{
+        width: 760px;
+        margin: 0 auto;
+    }
+    .noshow{
+        display:inline;
+    }
+    nav ul{ /*positions the navigation on the right hand side*/
+        padding: 10px;
+        position: fixed; /*absolute in mobile view*/
+        top: 30px;
+        right: 20px;
+        text-align: right;
+    }
+    section.first{
+        height: 400px;
+        font-size: 80px;
+        margin: 30px;
+    }
+    section.first p{
+        font-size: 20px;
+        position: absolute;
+        bottom: 450px;
+    }
+    section.third{
+        width: 100%
+    }
+    section.third p{
+        width: 250px;
+    }
+    section.third img{
+        width: 250px;
+        position: absolute;
+        top: 1000px;
+        right: 110px;
+    }
+    section.represent p{
+        position: relative;
+        bottom: 255px;
+        left: 540px;
+    }
+    section.represent p+p{
+        position:relative;
+        bottom: 170px;
+        left: 560px;
+    }
+    section.represent p+p+p{
+        position: relative;
+        bottom: 130px;
+        left: 265px;
+    }
+    section.represent h3{
+        margin: 90px;
+        font-size: 20px;
+    }
+    section.fourth{
+        padding-left: 180px;
+    }
+    section.fourth h3{
+        font-size: 28px;
+        padding:0;
+    }
+    section.fifth{
+        margin-left: 60px;
+    }
+    section.fifth input,
+    section.fifth textarea{
+        padding: 10px;
+        border: 1px solid #E5E5E5;
+        width: 650px;
+        color: #999999;
+    }
+    section.fifth textarea{
+        width: 650px;
+        height: 150px;
+        max-width: 700px;
+        line-height: 18px;
+    }
+    section.fifth.form label {
+        margin-left: 10px;
+        color: #999999;
+    }
+    section.fifth.submit{
+        width: 650px;
+        height: 20px;
+        background-color: #306d99;
+        color: #FFF;
+    }
+}
+/*desktop settings*/
+@media(min-width:960px){
+    #page{
+        width:960px;
+    }
+    section.first{
+        height: 650px;
+        font-size: 100px;
+        margin-top:250px;
+    }
+    section.first p{
+        bottom:100px;
+    }
+    section.second{
+        width:100%;
+        padding: 150px 0 150px 0;
+        font-size: 20px;
+    }
+    section.third{
+        padding:0;
+    }
+    section.third p{
+        width: 370px;
+        margin: 40px;
 
+    }
+    section.third img{
+        top: 1700px;
+    }
+    section.represent p{
+        bottom:240px;
+        left: 700px;
+    }
+    section.represent p+p{
+        bottom: 180px;
+        left: 740px;
+    }
+    section.represent p+p+p{
+        bottom: 180px;
+        left: 415px;
+    }
+    section.represent h3{
+        margin-left: 160px;
+    }
+    section.fourth{
+        margin:20px;
+        padding:0 0 50px 50px;
+    }
+    section.fourth h3{
+        font-size: 28px;
+
+    }
+
+    section.fifth{
+        margin-left: 200px;
+    }
+
+}
